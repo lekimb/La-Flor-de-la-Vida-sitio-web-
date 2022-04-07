@@ -1,0 +1,4 @@
+.contacto .mail {
+    color: var(--orange);
+    text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+/*Inicio*/
+
+.home-theme {
+    padding: 1em;
+
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--dark-green), var(--green), var(--yellow), var(--green), var(--dark-green));
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Intended for mobile devices */
+@media (min-width: 768px) {
+    .home-theme {
+        background-image: url('../assets/theme.jpg');
+    }
+}
+
+.titulo-inicio {
+    color: white;
+    text-align: center;
+}
+
+.titulo-inicio div:first-child {
+    font-family: Allura;
+    font-size: 50px;
+    /* line-height: 1.5em; */
+}
+        
+.titulo-inicio div:last-child {
+    font-size: 40px;
+    /* line-height: 2em; */
+    display: inline-block;
+    border-top: solid 1px white;
+    animation: espacio-reiki-opacity 1.2s ease-in;
+}
+
+@keyframes espacio-reiki-opacity {
+    from {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.carta-bienvenida {
+    margin: 1em auto;
+    padding: 2em;
+    max-width: 600px;
+
+    background-color: rgba(255,255,255,0.6);
+    color: var(--dark-green);
+    text-align: center;
+    /* line-height: 2em; */
+    font-size: 15px;
+}
+
+.carta-bienvenida .novedades {
+    color: orange;
+}
+
+.carta-bienvenida .link-novedades:hover {color: orange; text-decoration: underline;}
